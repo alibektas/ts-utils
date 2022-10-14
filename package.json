@@ -20,6 +20,13 @@
   },
   "homepage": "https://github.com/alibektas/utils-ts#readme",
   "devDependencies": {
-    "eslint": "^8.25.0"
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "hotkeys-js": "^3.10.0"
   }
 }
