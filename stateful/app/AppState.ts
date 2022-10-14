@@ -1,9 +1,7 @@
 import type { IAppState } from "./IAppState";
 import hotkeys from "hotkeys-js";
 
-export abstract class AppState<StateName extends string, StateInput>
-implements IAppState
-{
+export abstract class AppState<StateName extends string, StateInput> implements IAppState {
 	constructor(protected state_name: StateName) {}
 
 	protected _state: StateInput | null = null;

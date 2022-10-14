@@ -1,13 +1,10 @@
 export interface IState {
-  onEnter(...params: Array<any>): void;
-  onExit(): void;
+	onEnter(...params: Array<unknown>): void;
+	onExit(): void;
 }
 
 export interface StateMachine<States extends string> {
-  states: { [name in States]: IState };
-
-  get state(): IState;
-
-  constructor(states: Array<IState>): this;
-  transition(to: IState): IState;
+	states: { [name in States]: IState };
+	get state(): IState;
+	transition(to: IState): IState;
 }
