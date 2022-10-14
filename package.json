@@ -1,0 +1,25 @@
+{
+  "name": "utils-ts",
+  "version": "1.0.0",
+  "description": "Utilities functions/classes written in TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alibektas/utils-ts.git"
+  },
+  "keywords": [
+    "utils"
+  ],
+  "author": "Ali Bektas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alibektas/utils-ts/issues"
+  },
+  "homepage": "https://github.com/alibektas/utils-ts#readme",
+  "devDependencies": {
+    "eslint": "^8.25.0"
+  }
+}
