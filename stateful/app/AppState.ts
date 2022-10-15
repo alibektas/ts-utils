@@ -10,11 +10,13 @@ export abstract class AppState<StateName extends string, StateInput> {
 	}
 
 	onEnter(o: StateInput) {
+		console.log(`utils-ts onEnter() , state : ${this.state_name}`);
 		this._state = o;
 		this.enter_hotkey_scope();
 	}
 
 	onExit() {
+		console.log(`utils-ts onExit() , state : ${this.state_name}`);
 		this.exit_hotkey_scope();
 	}
 
@@ -27,6 +29,17 @@ export abstract class AppState<StateName extends string, StateInput> {
 	protected exit_hotkey_scope() {
 		hotkeys.setScope("all");
 	}
+
+
+	protected addEventListeners() {
+		throw new Error("NotImplemented");
+	}
+
+
+	protected removeEventListeners() {
+		throw new Error("NotImplemented");
+	}
+
 
 	create_hotkey( key : string , method : KeyHandler) {
 		console.log("Create hotkey");

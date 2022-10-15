@@ -6,5 +6,5 @@ export interface IState {
 export interface StateMachine<States extends string> {
 	states: { [name in States]: IState };
 	get state(): IState;
-	transition(to: IState): IState;
+	transition(to: States): void;
 }
