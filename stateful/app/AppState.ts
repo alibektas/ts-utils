@@ -1,7 +1,6 @@
-import type { IAppState } from "./IAppState";
 import hotkeys, { type KeyHandler } from "hotkeys-js";
 
-export abstract class AppState<StateName extends string, StateInput> implements IAppState {
+export abstract class AppState<StateName extends string, StateInput> {
 	constructor(protected state_name: StateName) {}
 
 	protected _state: StateInput | null = null;
@@ -19,11 +18,13 @@ export abstract class AppState<StateName extends string, StateInput> implements 
 		this.exit_hotkey_scope();
 	}
 
-	enter_hotkey_scope() {
+	/** Introduce all the shortcuts here using hotkeys-js lib. */
+	protected enter_hotkey_scope() {
 		hotkeys.setScope(this.name);
 	}
 
-	exit_hotkey_scope() {
+	/** Revert all the shortcuts. */
+	protected exit_hotkey_scope() {
 		hotkeys.setScope("all");
 	}
 
