@@ -1,5 +1,4 @@
 # README
 
-This module contains some utility functions and classes that make building software easy.
-You will not find anything that is relevant to building a Svelte app.
-For that please refer to the other  ( assuming that you have access ) [repo](https://github.com/alibektas/utils-svelte.git)
+This module is still in development.
+The aim of this package is to provide some components, that you may need from time to time.

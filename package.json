@@ -1,32 +1,25 @@
 {
-	"name": "utils-ts",
-	"version": "1.0.0",
-	"description": "Utilities functions/classes written in TypeScript",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/alibektas/utils-ts.git"
-	},
-	"keywords": [
-		"utils"
-	],
-	"author": "Ali Bektas",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/alibektas/utils-ts/issues"
-	},
-	"homepage": "https://github.com/alibektas/utils-ts#readme",
-	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^5.40.0",
-		"@typescript-eslint/parser": "^5.40.0",
-		"eslint": "^8.25.0",
-		"eslint-config-prettier": "^8.5.0",
-		"prettier": "^2.7.1"
-	},
-	"dependencies": {
-		"hotkeys-js": "^3.10.0"
-	}
+  "name": "@alibektas/utils-ts",
+  "version": "0.0.2",
+  "description": "Utility functions and classes written in TS.",
+  "main": "index.js",
+  "dependencies": {
+    "hotkeys-js": "^3.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alibektas/utils-ts.git"
+  },
+  "keywords": [
+    "utils"
+  ],
+  "author": "Ali Bektas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alibektas/utils-ts/issues"
+  },
+  "homepage": "https://github.com/alibektas/utils-ts#readme"
 }
