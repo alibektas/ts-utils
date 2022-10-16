@@ -1,2 +1,2 @@
 export { StateMachine } from './src/stateful/StateMachine';
-export { IState } from './src/stateful/IState';
+export { State } from './src/stateful/IState'
