@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "Utility functions and classes written in TS.",
   "types": "index.d.ts",
+  "main": "index.d.ts",
   "dependencies": {
     "eslint": "^8.25.0",
     "hotkeys-js": "^3.10.0",
