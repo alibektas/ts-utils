@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/alibektas/utils-ts/issues"
   },
-  "homepage": "https://github.com/alibektas/utils-ts#readme"
+  "homepage": "https://github.com/alibektas/utils-ts#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.40.0"
+  }
 }
