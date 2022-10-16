@@ -2,7 +2,7 @@ import { IState } from "./IState";
 
 export abstract class State<StateName extends string , StateInput> implements IState {
 
-    private _state : StateInput | null = null;
+    protected _state : StateInput | null = null;
 
     /**
      *
