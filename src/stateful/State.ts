@@ -8,12 +8,12 @@ export abstract class State<StateName extends string , StateInput>{
 
     
     onEnter(o : StateInput ): void {
-      	console.log(`utils-ts onEnter() , state : ${this.state_name}`);
+      	console.log(`[UTILS-TS] onEnter() State : ${this.state_name}`);
 		this.inner = o;
     }
 
     onExit(): StateInput {
-		console.log(`utils-ts onExit() , state : ${this.state_name}`);
+		console.log(`[UTILS-TS] onExit() State : ${this.state_name}`);
       
 		if (this.inner === null ) {
 			throw new NullInnerStateError();
